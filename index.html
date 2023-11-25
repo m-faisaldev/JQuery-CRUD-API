@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CRUD Operations with jQuery and AJAX</title>
+  </head>
+  <body>
+    <h1>Product List</h1>
+    <ul id="productList"></ul>
+
+    <h2>Add Product</h2>
+    <input type="text" id="productName" placeholder="Product Name" />
+    <input type="number" id="productPrice" placeholder="Product Price" />
+    <button onclick="addProduct()">Add Product</button>
+    <p id="addResponse"></p>
+
+    <h2>Update Product</h2>
+    <input type="number" id="updateProductId" placeholder="Product ID" />
+    <input type="text" id="updateProductName" placeholder="New Product Name" />
+    <input
+      type="number"
+      id="updateProductPrice"
+      placeholder="New Product Price"
+    />
+    <button onclick="updateProduct()">Update Product</button>
+    <p id="updateResponse"></p>
+
+    <h2>Delete Product</h2>
+    <input type="number" id="deleteProductId" placeholder="Product ID" />
+    <button onclick="deleteProduct()">Delete Product</button>
+    <p id="deleteResponse"></p>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

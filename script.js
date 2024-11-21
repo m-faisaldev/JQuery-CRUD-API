@@ -1,3 +1,4 @@
+//CRUD Through Jquey
 // Function to display response messages
 function displayMessage(selector, message) {
   $(selector).text(message);
